@@ -8,8 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'My Site',
   tagline: 'Dinosaurs are cool',
-  url: 'https://lennyql.github.io/linearizebmi-doc',
-  baseUrl: '/',
+  url: 'https://lennyql.github.io',
+  baseUrl: '/nearizebmi-doc/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
