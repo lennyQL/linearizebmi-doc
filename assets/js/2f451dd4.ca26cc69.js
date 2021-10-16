@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklinearizebmi_doc=self.webpackChunklinearizebmi_doc||[]).push([[936],{1994:function(e){e.exports=JSON.parse('{"allTagsPath":"/linearizebmi-doc/blog/tags","slug":"/linearizebmi-doc/blog/tags/hello","name":"hello","count":2,"permalink":"/linearizebmi-doc/blog/tags/hello"}')}}]);
