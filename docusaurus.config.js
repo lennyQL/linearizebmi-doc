@@ -14,7 +14,7 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'lennyQL', // Usually your GitHub org/user name.
-  projectName: 'linearize-doc', // Usually your repo name.
+  projectName: 'linearizebmi-doc', // Usually your repo name.
 
   presets: [
     [
