@@ -6,7 +6,6 @@
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lennyql.github.io/linearizebmi-doc/blog"/>
     <subtitle>linearizebmi Blog</subtitle>
-    <icon>https://lennyql.github.io/linearizebmi-doc/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>welcome</id>
