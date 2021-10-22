@@ -1,5 +1,5 @@
 # Documentation for linearizebmi
 
-Website https://lennyql.github.io/linearizebmi-doc
+Website:  https://lennyql.github.io/linearizebmi-doc
 
-linearizebmi https://github.com/lennyQL/linearizebmi
+linearizebmi:  https://github.com/lennyQL/linearizebmi
