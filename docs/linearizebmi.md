@@ -1,8 +1,13 @@
 ---
-sidebar_label: 'linearizebmi'
+sidebar_label: '逐次LMI化法'
 sidebar_position: 2
 ---
 
-# linearizebmi
+# 逐次LMI化法
 
-## 仕様など
+BMI制約問題は制御系設計問題において重要な問題である．一方で，BMI制約問題は数値的な求解が困難であることが知られている．
+
+
+逐次LMI化法は，BMI制約をLMI制約に近似し，繰り返しLMI制約問題を解くことで元のBMI制約問題の近似解を得る方法である．
+
+

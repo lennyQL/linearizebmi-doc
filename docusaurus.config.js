@@ -65,7 +65,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'download/download',
+            docId: 'download/install',
             position: 'left',
             label: 'Download',
           },

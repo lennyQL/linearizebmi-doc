@@ -1,6 +1,6 @@
 ---
-sidebar_label: 'その2'
+sidebar_label: 'その他のExample'
 sidebar_position: 2
 ---
 
-# sample その2
+# その他のExample
