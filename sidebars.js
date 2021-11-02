@@ -30,11 +30,11 @@ const sidebars = {
         },
         {
             type: 'category',
-            label: '仕様',
-            items: ['io', 'bmi', 'dlmi'],
+            label: 'マニュアル',
+            items: ['io'],
         },
     ],
-    sample: ['sample/sample', 'sample/sample2'],
+    sample: ['sample/sample'],
     // tutorialSidebar: [
     //   {
     //     type: 'category',
