@@ -13,7 +13,7 @@ https://github.com/lennyQL/linearizebmi/releases <br/>
 zip(tar.gz)ファイルを入手後，ファイルを解凍する．
 
 2. gitを利用して以下のコマンドからリポジトリを入手：
-```
+```bash
 git clone https://github.com/lennyQL/linearizebmi.git
 ```
 
@@ -23,7 +23,7 @@ linearizebmiのファイルを入手後，
 ファイル内のディレクトリ全てをMATLABのPATHに追加する必要がある．
 
 linearizebmiのファイルがある階層で，以下のコマンドを実行することでPATHを追加できる．
-```
+```matlab
 addpath(genpath([pwd filesep 'linearizebmi']));
 savepath
 ```

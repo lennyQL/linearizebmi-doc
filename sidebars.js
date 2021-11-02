@@ -31,7 +31,7 @@ const sidebars = {
         {
             type: 'category',
             label: 'マニュアル',
-            items: ['io'],
+            items: ['io','overbound'],
         },
     ],
     sample: ['sample/sample'],
