@@ -33,31 +33,36 @@ $$
 * &
 * \\
 (B_{1}+B_{2}KD_{21})^{T}P &
--I &
+-\gamma I &
 * \\
 C_{1}+D_{12}KC_{2} &
 D_{11}+D_{12}KD_{21} &
--I 
+-\gamma I 
 \end{matrix}
 \right]
 \prec O
+\tag{1}
 $$
-ここで，$P \in \mathbb{R}^{n \times n}$は正定値対称行列であり，
+ここで，$P \in \mathbb{R}^{n \times n}$はLyapunov行列であり，正定値対称行列である．
 この制約条件は決定変数$P, K$についてのBMI制約である．
 また，$*$は対称行列の対象部分を省略する記号である．
+
+$\gamma \in \mathbb{R}$は$H_\infty$ノルムであり，
+制約条件$(1)$のもと，$\gamma$を最小化する最適化問題が**$H_\infty$制御問題**である．
 
 このBMI制約を記述するサンプルコードを以下に示す．
 ```c
 % 係数行列，次元数，暫定解の定義（省略）
 
 % 決定変数
-P = sdpvar(n,n);
-K = sdpvar(m2,p2,'full');
+P = sdpvar(n,n);          % Lyapunov 行列
+K = sdpvar(m2,p2,'full'); % 制御器(定数ゲイン)
+g = sdpvar(1,1);          % H∞ノルム
 
 % 行列変数の文字列
 Fstr = "[P*(A+B2*K*C2)+(A+B2*K*C2)'*P'  P*(B1+B2*K*D21)     (C1+D12*K*C2)';"+...
-        "(B1+B2*K*D21)'*P'               -eye(p1)           (D11+D12*K*D21)';"+...
-        "C1+D12*K*C2                     D11+D12*K*D21       -eye(p1)]";
+        "(B1+B2*K*D21)'*P'              -g*eye(p1)          (D11+D12*K*D21)';"+...
+        "C1+D12*K*C2                     D11+D12*K*D21      -g*eye(p1)]";
 
 % 拡大LMIに変換
 LMI = linearizebmi(Fstr,{'P','K'},{'P0','K0'});
