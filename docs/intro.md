@@ -1,35 +1,20 @@
 ---
+sidebar_label: 'linearizebmiとは'
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# linearizebmiとは
 
-Let's discover **Docusaurus in less than 5 minutes**.
+linearizebmiは，**MATLAB**及び[**YALMIP**](https://github.com/yalmip/YALMIP)ユーザを対象に開発された，
+[**逐次LMI化法**](linearizebmi)のための支援プログラムである．
 
-## Getting Started
+linearizebmiは，**BMI制約**を**LMI制約**に自動で変換する機能を提供し，ユーザはBMI制約を記述するのみで，その他の付加情報なしにLMI制約への変換が可能である．
 
-Get started by **creating a new site**.
+linearizebmiは以下の特徴を持つ：
+- **YALMIP**の利用を前提とした実行環境
+- ユーザに**必要最小限の情報**のみ求める（例：BMI制約の文字列）
+- 文字列を利用した**デバッグ**が容易
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+linearizebmiを利用することで，逐次LMI化法の利用における問題として挙げられている**開発時間**，**信頼性**を改善することができる．
 
-## Generate a new site
 
-Generate a new Docusaurus site using the **classic template**:
-
-```shell
-npm init docusaurus@latest my-website classic
-```
-
-## Start your site
-
-Run the development server:
-
-```shell
-cd my-website
-
-npx docusaurus start
-```
-
-Your site starts at `http://localhost:3000`.
-
-Open `docs/intro.md` and edit some lines: the site **reloads automatically** and display your changes.
