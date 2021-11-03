@@ -25,6 +25,9 @@ linearizebmiのファイルを入手後，
 linearizebmiのファイルがある階層で，以下のコマンドを実行することでPATHを追加できる．
 ```matlab
 addpath(genpath([pwd filesep 'linearizebmi']));
+```
+さらに永続的にPATH設定を保存する場合は以下のコマンドを実行する．
+```matlab
 savepath
 ```
 

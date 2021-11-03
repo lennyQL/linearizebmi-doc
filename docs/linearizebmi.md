@@ -7,7 +7,7 @@ sidebar_position: 2
 
 **双線形行列不等式(BMI)制約問題**は制御系設計問題において重要な問題である．一方で，BMI制約問題は数値的な求解が困難であることが知られている．
 
-**逐次LMI化法(Overbounding Approximation Method)**はBMI制約問題を解く手法の一つであり，
+**逐次LMI化法(Overbounding Approximation Method)[^1]**はBMI制約問題を解く手法の一つであり，
 BMI制約を**線形行列不等式(LMI)制約**に近似し，繰り返しLMI制約問題を解くことで元のBMI制約問題の近似解を得る方法である．
 
 逐次LMI化法は以下の特徴を持つ：
@@ -67,3 +67,7 @@ $
 $(4)$は，元のBMI制約である$(1)$と比べて次元が拡大しており，**拡大LMI**と呼ばれる．
 
 **元の解きたい問題$(1)$の代わりに，十分条件である$(4)$を用いて最適化問題を繰り返し解き，$(1)$の近似解を得る方法が逐次LMI化法である．**
+
+
+[^1]: N. Sebe, Sequential Convex Overbounding Approximation Method for Bilinear Matrix Inequality Problems, Proceedings of IFAC symposium on
+Robust Control Design, pp. 175-182, 2018.
